@@ -1,40 +1,188 @@
-<form action="https://formsubmit.co/huan.zhao@alumni.stmarys-ca.edu"
-      method="POST"
-      class="card">
+<!DOCTYPE html>
+<html lang="en">
 
-    <h2>Send a Message</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Zhao Advisors LLC</title>
 
-    <input type="hidden"
-           name="_subject"
-           value="New message from Zhao Advisors website">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div style="display:flex; align-items:center; gap:15px;">
+
+        <img src="logo.png"
+             alt="Zhao Advisors Logo"
+             style="height:70px; border-radius:12px;">
+
+        <div class="logo">
+            Zhao Advisors LLC
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <img src="huan-profile.png"
+         alt="Huan Zhao"
+         style="
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:30px;
+         ">
+
+    <h1>We Would Love To Hear From You</h1>
+
+    <p style="max-width:800px; line-height:1.8;">
+
+        Thank you for visiting Zhao Advisors LLC.
+
+        We welcome inquiries regarding accounting,
+        bookkeeping, financial analysis,
+        budgeting, forecasting,
+        tax coordination,
+        and financial consulting services.
+
+        Please feel free to reach out with any questions,
+        business inquiries,
+        or collaboration opportunities.
+
+    </p>
+
+</section>
+
+<section class="section">
+
+    <div class="card"
+         style="
+            max-width:700px;
+            margin:auto;
+            padding:40px;
+         ">
+
+        <h2 style="margin-bottom:30px;">
+            Send a Message
+        </h2>
+
+        <form action="https://formsubmit.co/huan.zhao@alumni.stmarys-ca.edu"
+              method="POST">
+
+            <input type="hidden"
+                   name="_subject"
+                   value="New message from Zhao Advisors website">
+
+            <p>
+
+                <label>
+                    Your Name
+                </label><br><br>
+
+                <input type="text"
+                       name="name"
+                       required
+                       style="
+                            width:100%;
+                            padding:15px;
+                            font-size:16px;
+                            border-radius:8px;
+                            border:1px solid #ccc;
+                       ">
+
+            </p>
+
+            <p>
+
+                <label>
+                    Your Email
+                </label><br><br>
+
+                <input type="email"
+                       name="email"
+                       required
+                       style="
+                            width:100%;
+                            padding:15px;
+                            font-size:16px;
+                            border-radius:8px;
+                            border:1px solid #ccc;
+                       ">
+
+            </p>
+
+            <p>
+
+                <label>
+                    Your Message
+                </label><br><br>
+
+                <textarea name="message"
+                          rows="8"
+                          required
+                          style="
+                                width:100%;
+                                padding:15px;
+                                font-size:16px;
+                                border-radius:8px;
+                                border:1px solid #ccc;
+                          "></textarea>
+
+            </p>
+
+            <button class="button"
+                    type="submit"
+                    style="
+                        font-size:18px;
+                        padding:15px 30px;
+                    ">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
 
     <p>
-        <label>Your Name</label><br>
-
-        <input type="text"
-               name="name"
-               required>
+        © 2026 Zhao Advisors LLC
     </p>
 
     <p>
-        <label>Your Email</label><br>
-
-        <input type="email"
-               name="email"
-               required>
+        Email:
+        <a href="mailto:huan.zhao@alumni.stmarys-ca.edu">
+            huan.zhao@alumni.stmarys-ca.edu
+        </a>
     </p>
 
     <p>
-        <label>Your Message</label><br>
-
-        <textarea name="message"
-                  rows="6"
-                  required></textarea>
+        Phone:
+        <a href="tel:+19258995947">
+            +1 925 899 5947
+        </a>
     </p>
 
-    <button class="button"
-            type="submit">
-        Send Message
-    </button>
+</footer>
 
-</form>
+</body>
+</html>
