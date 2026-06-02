@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusOnStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+
+    <h1>📚 FocusOnStudy</h1>
+
+    <p>Your personal study companion.</p>
+
+    <h2>Today's Goal</h2>
+
+    <input type="text" id="goal" placeholder="Enter your study goal">
+
+    <button onclick="saveGoal()">Save Goal</button>
+
+    <p id="goalDisplay"></p>
+
+    <h2>Focus Timer</h2>
+
+    <div id="timer">25:00</div>
+
+    <button onclick="startTimer()">Start</button>
+
+    <button onclick="resetTimer()">Reset</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
