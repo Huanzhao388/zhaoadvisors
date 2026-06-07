@@ -1,3 +1,23 @@
+const mottos = [
+
+`Focus on today. Focus on yourself. Focus on progress.
+专注于当下，专注于自己，专注于进步。`,
+
+`Act. Act. Act.
+行动，行动，行动。`,
+
+`Only action dissolves anxiety.
+唯有行动才能消除焦虑。`,
+
+`Compare yourself only with who you were yesterday.
+只和昨天的自己比较。`,
+
+`The goal is not perfection. The goal is consistent progress.
+目标不是完美，而是持续进步。`
+
+];
+
+
 let timeLeft = 25 * 60;
 let timer;
 
@@ -46,4 +66,15 @@ function saveGoal() {
         "Today's Goal: " + goal;
 }
 
+function showRandomMotto() {
+
+    const randomIndex =
+        Math.floor(Math.random() * mottos.length);
+
+    document.getElementById("randomMotto").innerText =
+        mottos[randomIndex];
+}
+
+
 updateDisplay();
+showRandomMotto();
