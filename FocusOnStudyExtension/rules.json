@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://www.zhaoadvisors.com/focus/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "youtube.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://www.zhaoadvisors.com/focus/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "mail.google.com",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
