@@ -71,7 +71,7 @@ function showRandomMotto() {
     const randomIndex =
         Math.floor(Math.random() * mottos.length);
 
-    document.getElementById("random-Motto").innerText =
+    document.getElementById("random-motto").innerText =
         mottos[randomIndex];
 }
 
