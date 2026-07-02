@@ -13,21 +13,29 @@
 <header>
 
     <div style="display:flex; align-items:center; gap:15px;">
-
         <div class="logo">
             Zhao Advisors LLC
         </div>
-
     </div>
 
-   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="focus/index.html">FocusOnStudy</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+
+        <div class="dropdown">
+            <a href="portfolio.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="portfolio.html#ai-projects">Analytics & AI Projects</a>
+                <a href="portfolio.html#financial-projects">Financial Analytics</a>
+                <a href="portfolio.html#crypto-journey">Crypto Investment Journey</a>
+                <a href="portfolio.html#accounting-projects">Accounting & Systems</a>
+            </div>
+        </div>
+
+        <a href="focus/index.html">FocusOnStudy</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 </header>
 
@@ -35,90 +43,48 @@
 
     <img src="logo.png"
          alt="Zhao Advisors Logo"
-         style="
-            height:110px;
-            border-radius:12px;
-            margin-bottom:25px;
-         ">
+         style="height:110px; border-radius:12px; margin-bottom:25px;">
 
- <h1>Analytics, AI & Finance Projects</h1>
+    <h1>Analytics, AI & Finance Projects</h1>
 
-    <p style="
-        max-width:850px;
-        line-height:1.8;
-        font-size:22px;
-    ">
-        Selected projects in financial analytics,
-        Python visualization, machine learning,
-        accounting systems, and business process improvement.
+    <p style="max-width:850px; line-height:1.8; font-size:22px;">
+        Selected projects in financial analytics, Python visualization,
+        machine learning, accounting systems, and business process improvement.
     </p>
 
 </section>
 
-<section class="section">
+<section class="section" id="ai-projects">
 
-    <h2 style="
-        text-align:center;
-        margin-bottom:50px;
-        font-size:42px;
-    ">
+    <h2 style="text-align:center; margin-bottom:50px; font-size:42px;">
         Analytics & AI Projects
     </h2>
 
-    <div style="
-        display:grid;
-        grid-template-columns:1fr;
-        gap:40px;
-        max-width:1200px;
-        margin:auto;
-    ">
+    <div style="display:grid; grid-template-columns:1fr; gap:40px; max-width:1200px; margin:auto;">
 
-        <div class="card"
-             style="
-                padding:40px;
-                line-height:1.8;
-             ">
+        <div class="card" style="padding:40px; line-height:1.8;">
 
-            <h3 style="
-                font-size:32px;
-                margin-bottom:20px;
-            ">
+            <h3 style="font-size:32px; margin-bottom:20px;">
                 Forest Covertype Classification
             </h3>
 
             <p style="font-size:18px;">
-              The project involved data exploration, feature analysis,
-              stratified sampling, data preprocessing, model training,
-              hyperparameter tuning, performance evaluation,
-              and comparative analysis across multiple machine learning algorithms.
-            </p>
-
-            <p style="font-size:18px;">
-                The project included exploratory data analysis, stratified sampling,
-                feature standardization, model tuning, learning curves,
-                confusion matrices, runtime comparison, and class-imbalance evaluation.
+                The project involved data exploration, feature analysis, stratified sampling,
+                data preprocessing, model training, hyperparameter tuning, performance evaluation,
+                and comparative analysis across multiple machine learning algorithms.
             </p>
 
             <p style="font-size:18px;">
                 Models evaluated included Decision Trees, k-Nearest Neighbors,
-                Support Vector Machines, Scikit-learn Neural Networks,
-                and PyTorch Neural Networks.
-            </p>
-            <p style="font-size:18px;">
-                Performance was measured using Accuracy, Macro-F1 Score,
-                Balanced Accuracy, learning curves, confusion matrices,
-                and computational efficiency metrics to identify the most effective
-                classification approach.
+                Support Vector Machines, Scikit-learn Neural Networks, and PyTorch Neural Networks.
             </p>
 
-            
-            <div style="
-                display:grid;
-                grid-template-columns:repeat(3, 1fr);
-                gap:20px;
-                margin:30px 0;
-                text-align:center;
-            ">
+            <p style="font-size:18px;">
+                Performance was measured using Accuracy, Macro-F1 Score, Balanced Accuracy,
+                learning curves, confusion matrices, and computational efficiency metrics.
+            </p>
+
+            <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin:30px 0; text-align:center;">
 
                 <div class="card" style="padding:20px;">
                     <h4>Best Model</h4>
@@ -139,24 +105,21 @@
 
             <p style="font-size:18px;">
                 <strong>Skills demonstrated:</strong>
-                Python, pandas, NumPy, scikit-learn, PyTorch,
-                supervised machine learning, model evaluation, data preprocessing,
-                bias-variance analysis, and machine learning reporting.
+                Python, pandas, NumPy, scikit-learn, PyTorch, supervised machine learning,
+                model evaluation, data preprocessing, and machine learning reporting.
             </p>
-             <a class="button"
-                href="Forest_Covertype_Classification_Huan_Zhao.pdf"
-                target="_blank">
+
+            <a class="button"
+               href="Forest_Covertype_Classification_Huan_Zhao.pdf"
+               target="_blank">
                 View Full Project Report (PDF)
             </a>
 
-
-            <p style="font-size:15px; color:#64748B; margin-top:15px;
-            ">
-                Note: This project demonstrates the application of machine learning, statistical 
-                analysis, and Python programming ot a large-scale real-world classification problem.
-                This project is provided for educational and professional portfolio purposes.
-                Source code is not publically released in accordance with academnic integrity guidelines.
-                
+            <p style="font-size:15px; color:#64748B; margin-top:15px;">
+                Note: This project demonstrates the application of machine learning,
+                statistical analysis, and Python programming to a large-scale real-world
+                classification problem. Source code is not publicly released in accordance
+                with academic integrity guidelines.
             </p>
 
         </div>
@@ -165,104 +128,58 @@
 
 </section>
 
-<section class="section">
+<section class="section" id="financial-projects">
 
-    <h2 style="
-        text-align:center;
-        margin-bottom:50px;
-        font-size:42px;
-    ">
+    <h2 style="text-align:center; margin-bottom:50px; font-size:42px;">
         Financial Analytics Projects
     </h2>
 
-    <div style="
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:40px;
-        max-width:1400px;
-        margin:auto;
-    ">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:1400px; margin:auto;">
 
-        <div class="card"
-             style="
-                padding:30px;
-                text-align:center;
-             ">
+        <div class="card" style="padding:30px; text-align:center;">
 
             <img src="amzn-interactive-chart.png"
                  alt="Amazon Interactive Chart"
-                 style="
-                    width:80%;
-                    border-radius:14px;
-                    margin-bottom:25px;
-                    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-                 ">
+                 style="width:80%; border-radius:14px; margin-bottom:25px; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
 
-            <h3 style="
-                font-size:28px;
-                margin-bottom:15px;
-            ">
+            <h3 style="font-size:28px; margin-bottom:15px;">
                 Python Financial Data Visualization
             </h3>
 
-            <p style="
-                font-size:18px;
-                line-height:1.8;
-            ">
+            <p style="font-size:18px; line-height:1.8;">
                 Developed interactive stock market visualizations using Python
-                to analyze Amazon historical pricing data, including open,
-                high, low, close, and adjusted close performance trends.
+                to analyze Amazon historical pricing data, including open, high,
+                low, close, and adjusted close performance trends.
             </p>
 
-            <p style="
-                font-size:18px;
-                line-height:1.8;
-            ">
+            <p style="font-size:18px; line-height:1.8;">
                 <strong>Skills demonstrated:</strong>
-                Python, pandas, financial data analysis,
-                visualization, trend review, and investment analytics.
+                Python, pandas, financial data analysis, visualization,
+                trend review, and investment analytics.
             </p>
 
         </div>
 
-        <div class="card"
-             style="
-                padding:30px;
-                text-align:center;
-             ">
+        <div class="card" style="padding:30px; text-align:center;">
 
             <img src="amzn-adjusted-close.png"
                  alt="Amazon Adjusted Close Chart"
-                 style="
-                    width:80%;
-                    border-radius:14px;
-                    margin-bottom:25px;
-                    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-                 ">
+                 style="width:80%; border-radius:14px; margin-bottom:25px; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
 
-            <h3 style="
-                font-size:28px;
-                margin-bottom:15px;
-            ">
+            <h3 style="font-size:28px; margin-bottom:15px;">
                 Investment Analysis & Market Trend Review
             </h3>
 
-            <p style="
-                font-size:18px;
-                line-height:1.8;
-            ">
+            <p style="font-size:18px; line-height:1.8;">
                 Built financial analytics charts to support investment research,
                 trend analysis, and financial modeling practice through
                 data-driven visualization techniques.
             </p>
 
-            <p style="
-                font-size:18px;
-                line-height:1.8;
-            ">
+            <p style="font-size:18px; line-height:1.8;">
                 <strong>Skills demonstrated:</strong>
-                market trend analysis, financial modeling,
-                Python visualization, and investment research.
+                market trend analysis, financial modeling, Python visualization,
+                and investment research.
             </p>
 
         </div>
@@ -271,23 +188,66 @@
 
 </section>
 
-<section class="section">
+<section class="section" id="crypto-journey">
 
-    <h2 style="
-        text-align:center;
-        margin-bottom:50px;
-        font-size:42px;
-    ">
+    <h2 style="text-align:center; margin-bottom:50px; font-size:42px;">
+        Crypto Investment Journey
+    </h2>
+
+    <div class="card" style="padding:40px; line-height:1.8; max-width:1100px; margin:auto;">
+
+        <h3 style="font-size:32px; margin-bottom:20px;">
+            Building a Cryptocurrency Portfolio from $200
+        </h3>
+
+        <p style="font-size:18px;">
+            This section documents my real-world cryptocurrency investment experience
+            as I learn about digital assets, portfolio allocation, market volatility,
+            trading spreads, and long-term investment discipline.
+        </p>
+
+        <p style="font-size:18px;">
+            This content is for educational purposes only and does not constitute
+            financial, investment, tax, or legal advice.
+        </p>
+
+        <h3 style="font-size:26px; margin-top:30px;">
+            Week 1 — First Crypto Portfolio
+        </h3>
+
+        <p style="font-size:18px;">
+            Initial investment: <strong>$200.00</strong>
+        </p>
+
+        <ul style="font-size:18px; line-height:1.8;">
+            <li>Bitcoin: approximately $50</li>
+            <li>Chainlink: approximately $100</li>
+            <li>Dogecoin: approximately $25</li>
+            <li>Stellar Lumens: approximately $25</li>
+        </ul>
+
+        <p style="font-size:18px;">
+            This first week helped me understand the difference between daily return,
+            all-time return, transaction spread, and short-term crypto volatility.
+        </p>
+
+        <p style="font-size:18px;">
+            <strong>Skills demonstrated:</strong>
+            investment tracking, portfolio allocation, market observation,
+            risk awareness, and financial education.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" id="accounting-projects">
+
+    <h2 style="text-align:center; margin-bottom:50px; font-size:42px;">
         Accounting & Systems Projects
     </h2>
 
-    <div style="
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:40px;
-        max-width:1400px;
-        margin:auto;
-    ">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:1400px; margin:auto;">
 
         <div class="card" style="padding:35px; line-height:1.8;">
 
@@ -303,8 +263,8 @@
 
             <p style="font-size:18px;">
                 <strong>Skills demonstrated:</strong>
-                Excel modeling, budgeting, forecasting,
-                variance analysis, and financial reporting.
+                Excel modeling, budgeting, forecasting, variance analysis,
+                and financial reporting.
             </p>
 
         </div>
@@ -323,8 +283,8 @@
 
             <p style="font-size:18px;">
                 <strong>Skills demonstrated:</strong>
-                NetSuite migration support, reconciliation,
-                data validation, accounting operations, and process improvement.
+                NetSuite migration support, reconciliation, data validation,
+                accounting operations, and process improvement.
             </p>
 
         </div>
@@ -335,9 +295,7 @@
 
 <footer>
 
-    <p>
-        © 2026 Zhao Advisors LLC
-    </p>
+    <p>© 2026 Zhao Advisors LLC</p>
 
     <p>
         Email:
